@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UiPath Orchestrator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-left">
+            <div class="hamburger-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="logo">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 40'%3E%3Ctext x='5' y='25' font-family='Arial, sans-serif' font-size='18' font-weight='bold' fill='%23ff6900'%3EUiPath%3C/text%3E%3Ctext x='60' y='25' font-family='Arial, sans-serif' font-size='14' fill='%23666'%3EOrchestrator%3C/text%3E%3C/svg%3E" alt="UiPath Orchestrator">
+            </div>
+        </div>
+        <div class="header-right">
+            <div class="header-icons">
+                <i class="fas fa-search"></i>
+                <i class="fas fa-bell"></i>
+                <i class="fas fa-question-circle"></i>
+                <div class="notification-badge">99</div>
+            </div>
+            <div class="user-avatar">GS</div>
+        </div>
+    </header>
+
+    <div class="app-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="tenant-section">
+                <i class="fas fa-building"></i>
+                <span>Tenant</span>
+            </div>
+            
+            <nav class="sidebar-nav">
+                <div class="nav-section">
+                    <div class="nav-item">
+                        <i class="fas fa-folder"></i>
+                        <span>My Folders</span>
+                    </div>
+                </div>
+                
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search">
+                </div>
+
+                <div class="nav-section">
+                    <div class="nav-item expanded">
+                        <i class="fas fa-briefcase"></i>
+                        <span>My Workspace</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="nav-subitems">
+                        <div class="nav-subitem">
+                            <i class="fas fa-chart-line"></i>
+                            <span>Finance</span>
+                        </div>
+                        <div class="nav-subitem">
+                            <i class="fas fa-share-alt"></i>
+                            <span>Shared</span>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="main-header">
+                <div class="breadcrumb">
+                    <span>Home</span>
+                    <i class="fas fa-chevron-right"></i>
+                    <span class="active">Automations</span>
+                    <span>Monitoring</span>
+                    <span>Solutions</span>
+                    <span>Queues</span>
+                    <span>Assets</span>
+                    <span>Business Rules</span>
+                    <span class="preview-badge">Preview</span>
+                    <span>Storage</span>
+                </div>
+            </div>
+
+            <div class="content-tabs">
+                <div class="tab active">Processes</div>
+                <div class="tab">Jobs</div>
+                <div class="tab">Apps</div>
+                <div class="tab">Triggers</div>
+                <div class="tab">My Packages</div>
+                <div class="tab">Logs</div>
+            </div>
+
+            <div class="content-controls">
+                <div class="search-filter">
+                    <div class="search-input">
+                        <i class="fas fa-search"></i>
+                        <input type="text" placeholder="Search">
+                    </div>
+                    <div class="filter-buttons">
+                        <button class="filter-btn"><i class="fas fa-th"></i></button>
+                        <button class="filter-btn"><i class="fas fa-filter"></i></button>
+                    </div>
+                </div>
+                <div class="action-buttons">
+                    <button class="reset-btn">Reset to defaults</button>
+                    <button class="export-btn"><i class="fas fa-download"></i> Export</button>
+                    <button class="start-btn">Start</button>
+                </div>
+            </div>
+
+            <div class="data-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th><input type="checkbox"></th>
+                            <th>Process <i class="fas fa-sort"></i></th>
+                            <th>Type</th>
+                            <th>State <i class="fas fa-sort"></i></th>
+                            <th>Started <i class="fas fa-sort"></i></th>
+                            <th>Ended <i class="fas fa-sort"></i></th>
+                            <th><i class="fas fa-clock"></i></th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>[Studio Web Designer]</td>
+                            <td>Development</td>
+                            <td><span class="status success">Successful</span></td>
+                            <td>28 days ago</td>
+                            <td>28 days ago</td>
+                            <td>9m 5s</td>
+                            <td><i class="fas fa-ellipsis-v"></i></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>[Studio Web Designer]</td>
+                            <td>Development</td>
+                            <td><span class="status success">Successful</span></td>
+                            <td>28 days ago</td>
+                            <td>28 days ago</td>
+                            <td>28m</td>
+                            <td><i class="fas fa-ellipsis-v"></i></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>[Studio Web Designer]</td>
+                            <td>Development</td>
+                            <td><span class="status success">Successful</span></td>
+                            <td>28 days ago</td>
+                            <td>28 days ago</td>
+                            <td>1m</td>
+                            <td><i class="fas fa-ellipsis-v"></i></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>[Studio Web Designer]</td>
+                            <td>Development</td>
+                            <td><span class="status success">Successful</span></td>
+                            <td>28 days ago</td>
+                            <td>28 days ago</td>
+                            <td>28m</td>
+                            <td><i class="fas fa-ellipsis-v"></i></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>[Studio Web Designer]</td>
+                            <td>Development</td>
+                            <td><span class="status success">Successful</span></td>
+                            <td>28 days ago</td>
+                            <td>28 days ago</td>
+                            <td>14m</td>
+                            <td><i class="fas fa-ellipsis-v"></i></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>[Studio Web Designer]</td>
+                            <td>Development</td>
+                            <td><span class="status success">Successful</span></td>
+                            <td>28 days ago</td>
+                            <td>28 days ago</td>
+                            <td>20m</td>
+                            <td><i class="fas fa-ellipsis-v"></i></td>
+                        </tr>
+                        <tr class="selected">
+                            <td><input type="checkbox" checked></td>
+                            <td>CheckOutAppDemo</td>
+                            <td>RPA (Personal Rem...)</td>
+                            <td><span class="status success">Successful</span></td>
+                            <td>28 days ago</td>
+                            <td>28 days ago</td>
+                            <td>0</td>
+                            <td><i class="fas fa-ellipsis-v"></i></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>CheckOutAppDemo</td>
+                            <td>RPA (Personal Rem...)</td>
+                            <td><span class="status success">Successful</span></td>
+                            <td>29 days ago</td>
+                            <td>28 days ago</td>
+                            <td>4m 29s</td>
+                            <td><i class="fas fa-ellipsis-v"></i></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>[Studio Web Designer]</td>
+                            <td>Development</td>
+                            <td><span class="status success">Successful</span></td>
+                            <td>29 days ago</td>
+                            <td>28 days ago</td>
+                            <td>16m</td>
+                            <td><i class="fas fa-ellipsis-v"></i></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>[Studio Web Designer]</td>
+                            <td>Development</td>
+                            <td><span class="status success">Successful</span></td>
+                            <td>29 days ago</td>
+                            <td>29 days ago</td>
+                            <td>28m</td>
+                            <td><i class="fas fa-ellipsis-v"></i></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="table-footer">
+                <div class="pagination">
+                    <span>1 - 10 / 10</span>
+                    <span>Page 1 of 1</span>
+                    <div class="items-per-page">
+                        <span>Items</span>
+                        <select>
+                            <option>25</option>
+                            <option>50</option>
+                            <option>100</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Job Details Panel -->
+        <aside class="details-panel">
+            <div class="panel-header">
+                <h3>CheckOutAppDemo</h3>
+                <div class="panel-controls">
+                    <i class="fas fa-external-link-alt"></i>
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+            
+            <div class="panel-content">
+                <div class="package-info">
+                    <div class="package-name">Package: CheckOutAppDemo@1.0.31</div>
+                    <div class="package-state">
+                        <span class="state-indicator success"></span>
+                        <span>Successful</span>
+                    </div>
+                </div>
+
+                <div class="panel-tabs">
+                    <div class="tab active">Job details</div>
+                    <div class="tab">Logs</div>
+                    <div class="tab">Healing Agent</div>
+                </div>
+
+                <div class="runtime-details">
+                    <h4>Runtime details</h4>
+                    <div class="detail-row">
+                        <span class="label">Raw message:</span>
+                        <span class="value">Job completed</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="label">Entry point:</span>
+                        <span class="value">Main.xaml</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="label">Start Time:</span>
+                        <span class="value">07/02/2025 9:13:40.793</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="label">End Time:</span>
+                        <span class="value">07/02/2025 9:17:31.370</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="label">Duration:</span>
+                        <span class="value">3m 51s</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="label">Machine template:</span>
+                        <span class="value">gheorghe.stan@uipath.com's workspace machine</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="label">Robot:</span>
+                        <span class="value">gheorghe.stan@uipath.com-unattended</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="label">Account:</span>
+                        <span class="value">Gheorghe.Stan@uipath.com</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="label">Hostname:</span>
+                        <span class="value">LAPTOP-E0RBPDVO</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="label">Has Recording:</span>
+                        <span class="value">false</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="label">Healing Agent:</span>
+                        <span class="value">Enabled</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="label">Healing Agent self-healing:</span>
+                        <span class="value">Enabled</span>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Autopilot Chat Panel -->
+        <aside class="chat-panel">
+            <div class="chat-header">
+                <h3>Autopilot <span class="preview-badge">Preview</span></h3>
+                <div class="chat-controls">
+                    <i class="fas fa-cog"></i>
+                    <i class="fas fa-external-link-alt"></i>
+                    <i class="fas fa-minus"></i>
+                </div>
+            </div>
+
+            <div class="chat-content">
+                <div class="chat-welcome">
+                    <h4>How can I help you today?</h4>
+                    <p>Here are some recommended prompts to get you started.</p>
+                </div>
+
+                <div class="chat-suggestions">
+                    <div class="suggestion">What are the most recent updates in Automation Cloud services for 2025?</div>
+                    <div class="suggestion">What's the most efficient way to set up unattended infrastructure?</div>
+                    <div class="suggestion">Can you share some best practices for effective automation design?</div>
+                    <div class="suggestion">Tell me about common Studio installation mistakes and how to avoid them?</div>
+                    <div class="suggestion">What's the best way to allocate licenses to my users?</div>
+                </div>
+
+                <div class="activities-section">
+                    <div class="activities-header">
+                        <span>Activities with issues:</span>
+                        <span class="badge healed">5 healed</span>
+                    </div>
+                    <button class="see-activities-btn">See activities with issues</button>
+                </div>
+            </div>
+
+            <div class="chat-input">
+                <input type="text" placeholder="What would you like me to do?">
+                <div class="input-actions">
+                    <i class="fas fa-paperclip"></i>
+                    <i class="fas fa-arrow-up"></i>
+                </div>
+            </div>
+            
+            <div class="chat-footer">
+                <small>Autopilot can make mistakes. Please double check the responses.</small>
+            </div>
+        </aside>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
